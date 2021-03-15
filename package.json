@@ -1,0 +1,24 @@
+{
+  "name": "entrega2tdea",
+  "version": "1.0.0",
+  "description": "entrega 2 segun historias de usuario propuestas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brian-5021/entrega2.git"
+  },
+  "keywords": [
+    "nodejs",
+    "js",
+    "bootstrap"
+  ],
+  "author": "Brian Vladés",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brian-5021/entrega2/issues"
+  },
+  "homepage": "https://github.com/Brian-5021/entrega2#readme"
+}
