@@ -34,9 +34,23 @@ app.get('/', (req, res) => {
     });
 });
 
-app.get('/crearCurso', (req, res) => {
-    res.render('crear_curso', {
+app.get('/CrearCurso', (req, res) => {
+    res.render('CrearCurso', {
         titulo: 'Crear Curso',
+    });
+});
+
+app.post('/AddResult', (req, res) => {
+    res.render('AddResult', {
+        titulo: 'Inicio',
+        curso: {
+            id_curso: req.body.id_curso,
+            nombre: req.body.nombre,
+            valor: parseInt(req.body.valor),
+            descripcion: req.body.descripcion,
+            modalidad: req.body.modalidad,
+            intensidad: req.body.intensidad
+        }
     });
 });
 

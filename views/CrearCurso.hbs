@@ -1,0 +1,57 @@
+{{>header}}
+    
+
+
+<div class="container mt-2 p-2">
+    <div class="alert alert-primary" role="alert">
+    <h5 class="card-title">CREA UN NUEVO CURSO EN LA PLATAFORMA</h5><br>
+    <h6 class="card-title">Rellenando los campos podrás crear un nuevo curso, recuerda rellenar los campos marcados como requeridos (*)</h6><br>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <form action="/AddResult" method="post">
+        <div class=" form-group row">
+            <div class="col">
+                <label for="id_curso"></label>
+                <input type="number" class="form-control" placeholder="Identificación curso (*)" name="id_curso" required>
+            </div>
+            <div class="col-md-6">
+                <label for="modalidad">Modalidad</label>
+                <select class="form-control" name="modalidad">
+                    <option value="presencial">Presencial</option>
+                    <option value="virtual">Virtual</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col">
+                <label for="nombre"></label>
+                <input type="text" class="form-control" placeholder="Nombre (*)" name="nombre" required>
+            </div>
+            
+
+            <div class="col-md-6">
+                <label for="valor"></label>
+                <input type="number" class="form-control" placeholder="Valor (*)" name="valor" required>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-md-6">
+                <label for="descripcion"></label>
+                <input type="texarea" class="form-control" placeholder="Descripción (*)" name="descripcion" required>
+            </div>
+
+            <div class="col-md-6">
+                <label for="intensidad"></label>
+                <input type="number" class="form-control" placeholder="Intensidad horaria" name="intensidad">
+            </div>
+        </div> 
+        <center> <button class="btn btn-primary mt-3 btn-block" text-center>Enviar</button> </center> 
+    </form>
+    
+</div>
+
+{{>footer}}
