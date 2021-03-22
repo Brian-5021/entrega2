@@ -51,7 +51,7 @@ const inscribirCurso = (estudiante) => {
     if (!duplicado) {
         listaInscritos.push(estudiante);
         guardarInscritos(listaInscritos);
-        return "<div class='alert alert-success' role='alert'>El usuario identificado con el número de documento: <b>" + estudiante.nombre + "</b><br> Fue inscrito en el curso <b>" + estudiante.curso + " </b>de manera exitosa!</div>";
+        return "<div class='alert alert-success' role='alert'>El usuario identificado con el número de documento: <b>" + estudiante.doc + "</b><br> Fue inscrito en el curso con ID: <b>" + estudiante.curso + " </b>de manera exitosa!</div>";
 
     } else {
         return "<div class='alert alert-warning' role='alert'>El estudiante " + estudiante.nombre + " ya esta inscrito en el curso " + estudiante.curso + "</div>";
