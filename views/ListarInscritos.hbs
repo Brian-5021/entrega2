@@ -1,0 +1,15 @@
+{{>header}}
+
+
+<style>
+.collapse:not(.show) {
+    display: block;
+}
+</style>
+<div class="container mt-2 mb-2">
+    <div class="alert alert-warning" role="alert">
+     ¡Atención! si el curso no cuenta con inscritos, <b>no aparecerá en este listado</b>                           
+    </div>
+</div>
+{{{actualizarCurso curso}}}
+{{{listarEstInscritos}}}

@@ -1,6 +1,65 @@
 {{>header}}
 
-<h1>Bienvenido a mi sitio</h1>
 
+
+<div class="container">
+    <div id="carouselExampleControls" class="carousel slide mt-2" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://meetingmindfulness.com/wp-content/uploads/2017/12/banner-slider-inscripcion.png" class="d-block w-100" style="height:300px;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://educacioncontinua.uniandes.edu.co/sites/default/files/BannerLanding_Extension-2021-10_3.jpg" class="d-block w-100" style="height:300px;" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="https://cdn.pixabay.com/photo/2014/05/03/01/03/laptop-336704_960_720.jpg" class="d-block w-100" style="height:300px;" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+<div class="container mt-3 mb-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2015/01/09/11/08/startup-594090_960_720.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Crear curso</h5>
+                    <p class="card-text">Como administrador en esta sección puedes crear cursos y después de su aprobación será publicado</p>
+                    <a href="/crearCurso" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Inscribir usuarios</h5>
+                    <p class="card-text">Una vez creado el curso podremos inscribir a usarios dentro del mismo </p>
+                    <a href="/inscribirUsuario" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cdn.pixabay.com/photo/2014/05/02/21/49/laptop-336373_960_720.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Ver cursos</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="/listarCursos" class="btn btn-primary">Ver más...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 {{>footer}}
